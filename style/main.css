@@ -24,6 +24,7 @@ header .container {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+
 }
 
 header span .logo {
@@ -44,16 +45,22 @@ header nav a:hover {
     color: rgb(255, 255, 255);
     border: 1px solid #fff;
     background-color: #fff;
-    color:#141414;
+    color: #141414;
     border-radius: 5px;
-    
+
 }
 
 /* filme principal */
+.main-movie .container {
+    margin-left: 30px;
+    width: 70%;
+}
 
 .main-movie {
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('https://minhaseriefavorita.com/wp-content/uploads/2022/01/Super-Murali-Netflix.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .50),
+            rgba(0, 0, 0, .50) 100%),
+        url('../image/Super-Murali-Netflix.jpeg');
     height: 400px;
     background-size: cover;
     display: flex;
@@ -61,17 +68,21 @@ header nav a:hover {
     justify-content: center;
     align-items: flex-start;
 }
-.main-movie .description{
+
+.main-movie .container .description {
     margin-top: 10px;
     margin-bottom: 40px;
+    max-width: 650px;
+    text-align: justify;
 }
-.main-movie .title{
+
+.main-movie .title {
     margin-top: 5%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.buttons .button{
+.buttons .button {
     background-color: rgba(0, 0, 0, .50);
     border: none;
     color: aliceblue;
@@ -81,7 +92,8 @@ header nav a:hover {
     cursor: pointer;
     transition: .3s ease all;
 }
-.buttons .button:hover{
+
+.buttons .button:hover {
     background-color: aliceblue;
     color: #141414;
     border-radius: 5px;
@@ -89,4 +101,9 @@ header nav a:hover {
 
 .buttons .button i {
     margin-right: 5px;
+}
+.movie-box{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
